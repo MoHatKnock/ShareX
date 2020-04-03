@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/>
+
+        <title>Webshop</title>
+
+        <script>
+
+            function buy() {
+                alert("(   :  - )");
+            }
+
+        </script>
+
+        <style>
+            body {
+                font-family: Arial;
+            }
+
+            table {
+                width:100%; /* 100% der Breite der Seite. */
+                table-layout: fixed; /* Damit alle Spalten gleich breit sind. */
+                overflow-wrap: break-word; /* Damit eine neue Zeile angefangen wird Falls der Text zu lang ist. */
+                border-collapse: collapse;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+
+            button {
+                width: 100%;
+                height: 200%;
+                padding: 8px;
+                font-size: 18px;
+                border: 1px solid black;
+                background-color: green;
+                color: white;
+            }
+
+            .product_image {
+                padding: 0px;
+                margin-left: 25%;
+                width: 50%;
+                height: auto;
+                
+            }
+
+            .center_text {
+                text-align: center;
+            }
+            
+            .column_description {
+                width: 10%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1 class="center_text">Webshop</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <th class="column_description"></th>
+                    <th>BMW R 1200 GS K25</th>
+                    <th>BMW S 1000 RR</th>
+                    <th>Kawasaki ER-6</th>
+                    </tr>
+                <tr>
+                    <th class="column_description">Produktbild</th>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Gs-600.jpg" alt="BMW R 1200 GS K25" class="product_image"></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/BMW_S1000_RR_Studio.JPG/1024px-BMW_S1000_RR_Studio.JPG" alt="BMW S 1000 RR" class="product_image"></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Kawasaki_ER-6n_green_2008.jpg/1024px-Kawasaki_ER-6n_green_2008.jpg" alt="Kawasaki ER-6" class="product_image"></td>
+                </tr>
+                <tr>
+                    <th class="column_description">Preis</th>
+                    <td>16.500€</td>
+                    <td>19.550€</td>
+                    <td>6.495€</td>
+                </tr>
+                <tr>
+                    <th class="column_description">Leistung</th>
+                    <td>81 kW</td>
+                    <td>152 kW</td>
+                    <td>53 kW</td>
+                </tr>
+                <tr>
+                    <th class="column_description">Kaufen</th>
+                    <td><button onclick="buy()">Kaufen</button></td>
+                    <td><button onclick="buy()">Kaufen</button></td>
+                    <td><button onclick="buy()">Kaufen</button></td>
+                </tr>
+          </tbody>
+        </table>
+    </body>
+</html>
